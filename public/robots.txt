@@ -13,4 +13,4 @@ Allow: /build/*.woff2
 Allow: /build/*.ttf
 Allow: /build/*.svg
 
-Sitemap: https://www.samihhabbani.com/sitemap.xml
+Sitemap: https://www.mautassem.com
