@@ -35,7 +35,7 @@ class ContactController extends AbstractController
             // Envoi de l'email
             $email = (new Email())
                 ->from($this->getParameter('mailer_from')) // Utilisation du paramètre configuré
-                ->to('admin@monsite.com') // Destinataire (remplace par la vraie adresse)
+                ->to($this->getParameter('mailer_from')) // Destinataire (remplace par la vraie adresse)
                 ->subject('Nouveau message de contact')
                 ->text(sprintf(
                     "Vous avez reçu un message de %s (%s) :\n\n%s",
