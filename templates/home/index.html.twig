@@ -1,20 +1,77 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello HomeController!{% endblock %}
+{% block title %}Bienvenue sur notre site !{% endblock %}
 
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
+<!-- Section Hero avec une image de fond -->
+<section class="hero bg-primary text-white text-center py-5" style="background-image: url('https://via.placeholder.com/1500x600?text=Bienvenue'); background-size: cover;">
+    <div class="container">
+        <h1 class="display-4">YARA Food Truck</h1>
+        <p class="lead">Nous vous proposons des services exceptionnels et une expérience inoubliable.</p>
+        <a href="{{ path('app_contact') }}" class="btn btn-light btn-lg">Contactez-nous</a>
+    </div>
+</section>
 
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
+<!-- Section à propos de l'entreprise -->
+<section class="about py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <h2 class="display-5">À propos de nous</h2>
+                <p>
+                    Nous sommes une équipe passionnée par notre domaine. Nous offrons des services et produits de qualité adaptés à vos besoins.
+                    Découvrez notre mission et comment nous pouvons vous aider à atteindre vos objectifs.
+                </p>
+                <a href="{{ path('app_contact') }}" class="btn btn-primary">En savoir plus</a>
+            </div>
+            <div class="col-md-6">
+                <img src="https://via.placeholder.com/500x300?text=Notre+équipe" class="img-fluid rounded shadow" alt="Notre équipe">
+            </div>
+        </div>
+    </div>
+</section>
 
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code>C:/Users/06011-39-02/test/truck-food-project-local/src/Controller/HomeController.php</code></li>
-        <li>Your template at <code>C:/Users/06011-39-02/test/truck-food-project-local/templates/home/index.html.twig</code></li>
-    </ul>
-</div>
+<!-- Section Services avec 3 colonnes -->
+<section class="services bg-light py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Nos Plats</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card shadow-sm mb-4">
+                    <img src="https://via.placeholder.com/400x250?text=Service+1" class="card-img-top" alt="FALAFEL">
+                    <div class="card-body">
+                        <h5 class="card-title">FALAFEL</h5>
+                        <p class="card-text">Une description de notre premier service. Il vous aide à accomplir...</p>
+                        <a href="#" class="btn btn-outline-primary">En savoir plus</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card shadow-sm mb-4">
+                    <img src="https://via.placeholder.com/400x250?text=Service+2" class="card-img-top" alt="SHAWARMA">
+                    <div class="card-body">
+                        <h5 class="card-title">SHAWARMA</h5>
+                        <p class="card-text">Une description de notre deuxième service. Il vous aide à accomplir...</p>
+                        <a href="#" class="btn btn-outline-primary">En savoir plus</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card shadow-sm mb-4">
+                    <img src="https://via.placeholder.com/400x250?text=Service+3" class="card-img-top" alt="FOULE & FATTA">
+                    <div class="card-body">
+                        <h5 class="card-title">FOULE & FATTA</h5>
+                        <p class="card-text">Une description de notre troisième service. Il vous aide à accomplir...</p>
+                        <a href="#" class="btn btn-outline-primary">En savoir plus</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer simple -->
+<footer class="bg-dark text-white text-center py-4">
+    <p>&copy; 2025 MonSite. Tous droits réservés.</p>
+</footer>
 {% endblock %}
