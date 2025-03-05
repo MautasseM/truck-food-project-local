@@ -1,5 +1,7 @@
 
 ###> symfony/framework-bundle ###
+/deploy.sh
+/.env
 /.env.local
 /.env.local.php
 /.env.*.local
